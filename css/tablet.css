@@ -1,0 +1,24 @@
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .card {
+    height: fit-content;
+    width: calc(50% - 15px);
+  }
+  #job-info {
+    flex-direction: column;
+    height: 1000px;
+  }
+  #certificate .list-element:nth-child(odd) > * {
+    border-right: none;
+  }
+
+  #digital-cv {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #job-info {
+    flex-direction: column;
+    height: 1200px !important;
+  }
+}

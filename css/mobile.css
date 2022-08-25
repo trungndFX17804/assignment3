@@ -1,0 +1,11 @@
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+  #certificate .list-element:nth-child(odd) > * {
+    border-right: none;
+  }
+  #digital-cv {
+    display: block !important;
+  }
+}

@@ -1,0 +1,160 @@
+:root {
+  --logo-size: 30px;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#banner {
+  background-image: linear-gradient(
+      rgba(33, 33, 33, 0.6),
+      rgba(33, 33, 33, 0.6)
+    ),
+    url("../image/banner.jpg");
+  background-size: cover;
+  height: 40vh;
+
+  color: #f7f7f7;
+}
+
+.d-grid {
+  column-gap: 30px !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Details */
+#personal-info span {
+  display: inline-block;
+  width: 70px;
+}
+
+/* Job info */
+.card-logo {
+  top: 20px;
+  right: 30px;
+  height: var(--logo-size);
+  width: var(--logo-size);
+}
+
+#job-info {
+  gap: 30px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.card {
+  width: calc((100% - 30 * 2px) / 3);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-element {
+  list-style: outside !important;
+}
+.list-element p {
+  margin-bottom: 0;
+}
+.program::before,
+.detail::before {
+  content: "- ";
+}
+.list-element .gpa::before {
+  content: "- GPA: ";
+}
+.rank-bar {
+  height: 10px;
+  width: 50px;
+}
+
+.rank-bar:first-child {
+  margin-left: 0 !important;
+}
+
+.rank-bar {
+  background-color: #f2f2f2;
+}
+.rank-bar.checked {
+  background-color: #0d6efd;
+}
+
+.rounded-circle {
+  height: 40px;
+  width: 40px;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.year {
+  font-style: italic;
+}
+
+#hobbies li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#certificate .list-element {
+  list-style-type: none !important;
+}
+
+#certificate .list-element:nth-child(odd):not(:last-child) > * {
+  border-right: 1px solid #ffc107;
+}
+
+#footer ul {
+  height: 120px;
+}
+
+.list-group-item {
+  padding: 0;
+  margin: 0;
+}
+
+#projects .list-group-item > div > span::before {
+  content: "- ";
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+#digital-cv {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+#digital-cv .timeline {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 6px;
+  border: none;
+  border-radius: 50%;
+}
+#digital-cv #timeline p {
+  margin: 0;
+}
+#digital-cv #timeline .my-border {
+  border-bottom-style: dashed !important;
+}
+#digital-cv #timeline {
+  grid-row: 1/-1;
+  grid-column: 3/-1;
+}
+#digital-cv #team p {
+  white-space: nowrap;
+  margin: 0;
+}
